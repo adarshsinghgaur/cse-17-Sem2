@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudCore Technologies</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="logo" href="#home">CloudCore</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" id="themeToggle" type="button">Dark</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content reveal">
+        <p class="eyebrow">Technical Web Solutions</p>
+        <h1>Build secure, fast and modern digital systems.</h1>
+        <p class="hero-text">
+          CloudCore Technologies helps companies design websites, cloud dashboards,
+          automation tools and data-driven platforms with clean engineering.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#contact">Start a Project</a>
+          <a class="btn secondary" href="#services">Explore Services</a>
+        </div>
+      </div>
+
+      <div class="tech-panel reveal">
+        <canvas id="networkCanvas" width="560" height="360" aria-label="Animated technology network"></canvas>
+        <div class="status-card">
+          <span class="pulse"></span>
+          <div>
+            <strong>System Status</strong>
+            <p>99.98% uptime this month</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div>
+        <strong>120+</strong>
+        <span>Projects Delivered</span>
+      </div>
+      <div>
+        <strong>45ms</strong>
+        <span>Average API Response</span>
+      </div>
+      <div>
+        <strong>24/7</strong>
+        <span>Cloud Monitoring</span>
+      </div>
+      <div>
+        <strong>98%</strong>
+        <span>Client Satisfaction</span>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="section-heading reveal">
+        <p class="eyebrow">What We Do</p>
+        <h2>Services for modern technology teams</h2>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card reveal">
+          <span class="icon">01</span>
+          <h3>Web Development</h3>
+          <p>Responsive business websites, admin panels and interactive web apps using modern frontend practices.</p>
+        </article>
+        <article class="service-card reveal">
+          <span class="icon">02</span>
+          <h3>Cloud Solutions</h3>
+          <p>Cloud migration, scalable hosting, backup planning and system monitoring for reliable operations.</p>
+        </article>
+        <article class="service-card reveal">
+          <span class="icon">03</span>
+          <h3>Cyber Security</h3>
+          <p>Secure login flows, vulnerability checks, access control and data protection for growing platforms.</p>
+        </article>
+        <article class="service-card reveal">
+          <span class="icon">04</span>
+          <h3>Data Analytics</h3>
+          <p>Dashboards, reports and business intelligence tools that turn raw data into useful decisions.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section process" id="process">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Our Process</p>
+        <h2>From idea to launch in four clear steps</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <span>1</span>
+          <h3>Research</h3>
+          <p>We understand goals, users, competitors and technical requirements.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <span>2</span>
+          <h3>Design</h3>
+          <p>We create clean layouts, user flows and a strong visual direction.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <span>3</span>
+          <h3>Develop</h3>
+          <p>We build responsive pages, interactive features and optimized code.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <span>4</span>
+          <h3>Launch</h3>
+          <p>We test performance, security and device compatibility before release.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pricing">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Plans</p>
+        <h2>Simple packages for project work</h2>
+      </div>
+      <div class="pricing-grid">
+        <article class="price-card reveal">
+          <h3>Starter</h3>
+          <p class="price">$299</p>
+          <p>For small portfolio or business websites.</p>
+          <ul>
+            <li>5 responsive pages</li>
+            <li>Basic contact form</li>
+            <li>SEO-ready structure</li>
+          </ul>
+        </article>
+        <article class="price-card featured reveal">
+          <h3>Professional</h3>
+          <p class="price">$799</p>
+          <p>For growing teams that need stronger features.</p>
+          <ul>
+            <li>10 responsive pages</li>
+            <li>Dashboard interface</li>
+            <li>Performance optimization</li>
+          </ul>
+        </article>
+        <article class="price-card reveal">
+          <h3>Enterprise</h3>
+          <p class="price">Custom</p>
+          <p>For advanced cloud and security projects.</p>
+          <ul>
+            <li>Custom web application</li>
+            <li>Cloud deployment support</li>
+            <li>Security review</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-copy reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Tell us about your technical project</h2>
+        <p>
+          Send your requirement and our team will respond with a clear plan,
+          timeline and recommended technology stack.
+        </p>
+      </div>
+      <form class="contact-form reveal" id="contactForm">
+        <label>
+          Name
+          <input type="text" id="name" placeholder="Your name">
+        </label>
+        <label>
+          Email
+          <input type="email" id="email" placeholder="you@example.com">
+        </label>
+        <label>
+          Project Type
+          <select id="projectType">
+            <option value="">Select a service</option>
+            <option>Web Development</option>
+            <option>Cloud Solutions</option>
+            <option>Cyber Security</option>
+            <option>Data Analytics</option>
+          </select>
+        </label>
+        <label>
+          Message
+          <textarea id="message" rows="4" placeholder="Write your requirement"></textarea>
+        </label>
+        <button class="btn primary" type="submit">Send Message</button>
+        <p class="form-message" id="formMessage"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 CloudCore Technologies. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
